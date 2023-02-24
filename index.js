@@ -65,6 +65,7 @@ app.get("/glampartner/:type/:token", (req, res, next) => {
     })
     .catch(error => {
       console.log(error);
+      res.status(400).send("Erro:" + error);
     });
 });
 
