@@ -19,8 +19,7 @@ const notification_options = {
 
 app.get("/glampartner/:type/:token", (req, res, next) => {
     const  messageType = req.params.type
-    //const  registrationToken = req.params.token
-    const  registrationToken = "ehFdwe6FRk67XEMFSL43oh:APA91bELslNoKrpS1YD5VLkJ7C3ZJuS-hpWyXbtuOpVuJyez8lm3GrYdomeVBHjC4B5VrJDh0_TWHv3Gbz3lDnsXoCrapn1-vCcbfFEj9yjispd2MgfqhmrLIlxfdmbj5K0B13BrDzEC"
+    const  registrationToken = req.params.token
     let payload;
     switch(messageType.toString()){
         case "0":
