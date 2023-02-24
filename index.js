@@ -49,15 +49,6 @@ app.get("/glampartner/:type/:token", (req, res, next) => {
                 }
               };
         break;
-
-        case "2":
-            payload = {
-                notification: {
-                  title: "Falcons vs. Patriots",
-                  body: "Get the inside scoop on the big game."
-                }
-              };
-        break;
     }
     payload = {
         notification: {
